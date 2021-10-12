@@ -1,0 +1,74 @@
+.Testimonials {
+    height: 29.374375rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include breakpoint-down(small){
+        height: 64.45375rem;
+    }
+    &--text {
+        width: 27.05625rem;
+        height: 4.769375rem;
+        text-align: center;
+
+        @include breakpoint-down(small) {
+            width: 14.75375rem;
+            height: 6.093125rem;
+            padding-top: 1.25rem;
+        }
+    }
+
+    &--card {
+        height: 11.055rem;
+        display: flex;
+        padding-top: 3.565625rem;
+
+        @include breakpoint-down(small)
+        {   height: 45.554375rem;
+            flex-flow: column;
+        }
+
+        &--cardDetails {
+            display: flex;
+            padding-right: 1.42625rem;
+            @include breakpoint-down(small){
+                
+                flex-flow: column;
+            }
+        }
+
+        &--img {
+            width: 7.889375rem;
+            height: 11.054375rem;
+            overflow: hidden;
+            @include breakpoint-down(small){
+                width: 14.79875rem;
+            }
+        }
+
+        &--text {
+            background: white;
+            width: 14.79875rem;
+            padding-left: 1.3375rem;
+            padding-top: 1.783125rem;
+            color: #737373;
+            h3 {
+                color: #252b42;
+            }
+            @include breakpoint-down(small){
+                height: 9.27125rem;
+                width: 13.46125rem;
+                padding-top: 1.783125rem;
+              //  padding-left: 1.3375rem;
+            }
+        }
+
+        &--cardinner{
+            @include breakpoint-down(small){
+                width: 14.92375rem;
+                height: 22.10875rem;
+                padding-bottom: 1.3375rem;
+            }
+        }
+    }
+}

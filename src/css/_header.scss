@@ -1,0 +1,105 @@
+.header {
+    &--navBar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0.7471875rem;
+        padding-bottom: 0.7471875rem;
+        height: 2.568125rem;
+        align-items: center;
+        overflow: hidden;
+        font-weight: bold;
+        h4 {
+            font-size: 1.07rem;
+        }
+        &--login {
+            font-size: 0.62375rem;
+            color: #23a6f0;
+            padding-right: 2.005625rem;
+            @include breakpoint-down(small) {
+                visibility: hidden;
+            }
+        }
+        &--Button {
+            width: 9.53875rem;
+            height: 2.318125rem;
+            font-size: 0.62375rem;
+            background: #23a6f0;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 0.125rem;
+            @include breakpoint-down(small) {
+                visibility: hidden;
+            }
+        }
+        &--FiMenu {
+            color: #7b7b7b;
+            width: 20px;
+            height: 20px;
+        }
+        &--menuBox {
+            width: 250px;
+            @include breakpoint-down(small) {
+                width: 100px;
+            }
+        }
+    }
+    &--sectionTwo
+    {
+        height: 29.24rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint-down(small)
+        {
+            height: 23.93625rem;
+        }
+    }
+    &--sectionTwoDetails{
+        width: 30.5775rem;
+        height: 19.255625rem;
+        position: absolute;
+        text-align: center;
+
+        @include breakpoint-down(small){
+            width: 14.75375rem;
+            height: 23.93625rem;
+        }
+        &--Btn1 {
+            width: 8.24625rem;
+            height: 2.318125rem;
+            font-size: 0.62375rem;
+            background: #23a6f0;
+            color: white;
+            cursor: pointer;
+            border-color: #23a6f0;
+            border-radius: 1.649375rem;
+            margin-right: 0.25rem;
+        }
+        &--Btn2{
+            width: 8.24625rem;
+            height: 2.318125rem;
+            font-size: 0.62375rem;
+            border-radius: 1.649375rem;
+            cursor: pointer;
+            color: #23a6f0;
+            border-color: #23a6f0;
+            background: none;
+
+            @include breakpoint-down(small){
+                margin-top: 1.114375rem;
+            }
+        }
+        h1 {
+            font-size: 2.585rem;
+            font-weight: 900;
+            @include breakpoint-down(small)
+            {
+                font-size: 1.783125rem;
+            }
+        }
+        p {
+            font-size: 0.89125rem;
+        }
+    }
+}

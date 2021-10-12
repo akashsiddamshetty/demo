@@ -1,0 +1,63 @@
+.Feature {
+    height: 34.678125rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    P {
+        font-size: 0.62375rem;
+    }
+    @include breakpoint-down(small)
+    {
+        height: 67.395625rem;
+    }
+
+    &--Text {
+        width: 30.71rem;
+        height: 7.31rem;
+        text-align: center;
+        h2 {
+            font-size: 1.783125rem;
+            font-weight: bold;
+        }
+        @include breakpoint-down(small)
+        {
+            width: 14.75375rem;
+            height: 18.18625rem;
+        }
+        
+    }
+    &--Details{
+        margin-top: 1.07rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h5{
+            font-size: 0.713125rem;
+            margin: 0;
+        }
+
+        &--card{
+            border: 1px solid #F2F2F2;
+            border-radius: 0.25rem;
+            width: 14.62rem;
+            height: 6.195625rem;
+            margin: 1.3375rem;
+            display: flex;
+            &--icon{
+                width: 2.139375rem;
+                height: 1.761875rem;
+                padding-top: 1.56rem;
+                padding-left: 0.89125rem;
+                padding-right: 0.89125rem;
+                color: #23a6f0;
+            }
+            &--text{
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                height: 6.195625rem;
+            }
+        }
+    }
+
+}

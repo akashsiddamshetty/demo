@@ -1,0 +1,59 @@
+.Aboutus{
+    height: 38.734375rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include breakpoint-down(small){
+        height: 43.75rem;
+    }
+    &--text{
+        width: 27.05625rem;
+        height: 4.769375rem;
+        text-align: center;
+        @include breakpoint-down(small)
+        {
+            width: 14.75375rem;
+
+        }
+    }
+
+    &--row{
+        display: flex;
+        height: 19.70125rem;
+        padding-top: 4.279375rem;
+
+        @include breakpoint-down(small){
+            flex-flow: column;
+            height: 25.8125rem;
+        }
+    }
+    &--media{
+        width: 26.744375rem;
+        height: 19.70125rem;
+        padding-right: 5.34875rem;
+        @include breakpoint-down(small){
+            width: 14.79875rem;
+            height: 11.25rem;
+            padding: 0;
+        }
+    }
+    &--Details{
+        padding-top: 1.916875rem;
+        height: 15.868125rem;
+        width: 14.709375rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        @include breakpoint-down(small){
+            align-items: center;
+        }
+    }
+    &--icon{
+        color: #23a6f0;
+        padding-right: 0.89125rem;
+
+    }
+    &--flexRow{
+        display: flex;
+    }
+}
